@@ -5,9 +5,46 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>M Chat</title>
-		<link rel="stylesheet" href="./public/style.css" />
+		<link rel="stylesheet" href="/style.css" />
 	</head>
+
 	<body>
-		<script src="./public/client.js"></script>
+		<section class="chat_section">
+			<div class="brand">
+				<img
+					height="70"
+					src="https://t4.ftcdn.net/jpg/04/17/26/55/360_F_417265589_3icF8VsU9yT6mTWTAeFkGry8JKQdztxt.jpg"
+					alt="img"
+				/>
+				<h1>Mchat</h1>
+			</div>
+			<div class="message_area">
+				<div class="incoming message">
+					<h4>Mayank</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+						numquam.
+					</p>
+				</div>
+				<div class="outgoing message">
+					<h4>Mayank</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+						numquam.
+					</p>
+				</div>
+			</div>
+			<div class="textArea">
+				<textarea
+					id="textarea"
+					cols="30"
+					rows="1"
+					placeholder="Write a message..."
+				></textarea>
+				<button id="button">Send</button>
+			</div>
+		</section>
 	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/client.js"></script>
 </html>
